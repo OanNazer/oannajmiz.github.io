@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #eaeaea;
+  cursor: default;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 820px;
+  background-color: rgb(195, 255, 230);
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px black;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #30AC9A;
+  text-shadow:
+    -2px -2px 2px white,
+    2px 2px 2px black;
+  cursor: default;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #D7D7D7;
+}
+
+nav {
+  background-color: #F1F1F1;
+  width: 100%;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  border-bottom: 5px solid salmon;
+}
+
+nav ul li {
+  padding: 15px 0;
+}
+
+nav ul li a, li label {
+  padding: 0 15px;
+  border-left: 1px solid black;
+  transition: 0.3s;
+  font-size: 1.2rem;
+}
+
+nav ul li:nth-child(2) a {
+  border: none;
+}
+
+nav ul li a:hover {
+  color: salmon;
+  font-weight: bolder;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper,
+.jumbotron {
+  margin: 10px;
+  padding: 30px;
+  width: 100%;
+}
+
+.jumbotron h1 {
+  font-size: 2.2rem;
+}
+
+.jumbotron .thumbnail {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 164, 99);
+  border: 5px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.jumbotron .thumbnail img {
+  position: absolute;
+  width: 100%;
+  border-radius: 50%;
+}
+
+section h2 {
+  font-size: 1.8rem;
+}
+
+
+#about .wrapper,
+#project .wrapper {
+  background-color: rgb(255, 182, 113);
+  box-shadow: inset 0px 1.5px 10px black;
+  border-radius: 5px;
+}
+
+
+
+.area-content {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'content1 content2'
+    'content1 content2'
+    'content3 content3';
+}
+
+.microsoft {
+  grid-area: content1;
+}
+
+.programming {
+  grid-area: content2;
+}
+
+.graphic {
+  grid-area: content3;
+}
+
+.skill-box {
+  box-shadow: 0px 0px 10px black;
+  border-radius: 5px;
+}
+
+.skill-box .title-box {
+  background-color: lightblue;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.skill-box .content-box {
+  background-color: #686868;
+  padding: 15px 30px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.content-box .grade-box {
+  background-color: white;
+  padding: 10px;
+  margin: 15px auto;
+  border-radius: 5px;
+  box-shadow: -1px -1px 2px white, 1px 1px 2px black;
+}
+
+.grade-box p {
+  text-shadow: 0px 0px 1px black;
+  margin: 0;
+}
+
+.grade-box .progress-box {
+  display: flex;
+}
+
+.progress-box .progress-num {
+  margin-right: 10px;
+  color: lightblue;
+  text-shadow: 0px 0px 1px black;
+}
+
+.progress-box .progress-bar {
+  width: 100%;
+  background-color: #E3E3E3;
+  box-shadow: inset 0px 0px 3px black;
+  border-radius: 3px;
+  padding: 1.5px;
+}
+
+.progress-box .progress-bar .progress {
+  background-color: lime;
+  height: 100%;
+  border-radius: 3px 0px 0px 3px;
+  width: 0%;
+  transition: width 0.5s;
+}
+
+.grade-box:hover .progress.m-word {
+  width: 90%;
+}
+
+.grade-box:hover .progress.m-excel {
+  width: 40%;
+}
+
+.grade-box:hover .progress.m-point {
+  width: 80%;
+}
+
+.grade-box:hover .progress.javascript {
+  width: 60%;
+}
+
+.grade-box:hover .progress.php {
+  width: 30%;
+}
+
+.grade-box:hover .progress.python {
+  width: 50%;
+}
+
+.grade-box:hover .progress.coreldraw {
+  width: 70%;
+}
+
+.grade-box:hover .progress.photoshop {
+  width: 60%;
+}
+
+
+
+
+.project-box {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 150px;
+  position: relative;
+  cursor: pointer;
+}
+
+.project-box .pic-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 15px;
+  border: 3px solid black;
+  overflow-x: hidden;
+}
+
+.project-box .pic-box img {
+  border-radius: 50%;
+  transform: translateX(-100%) rotate(-180deg);
+  transition: transform .5s;
+}
+
+.project-box .caption {
+  font-weight: bolder;
+  text-shadow: 0px 0px 1px black;
+}
+
+.project-box .caption a {
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.caption a:hover {
+  border-bottom: 2px solid salmon;
+}
+
+.project-box span {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  left: 15px;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.project-box:hover>span {
+  opacity: 0;
+}
+
+.project-box:hover .pic-box img {
+  transform: translateX(0%) rotate(0deg);
+}
+
+
+
+#contact {
+  display: none;
+}
+
+
+#contact.show {
+  display: flex;
+}
+
+.menu-title,
+#menu-btn,
+#close-menu,
+#contactBtn {
+  display: none;
+}
+
+.close-menu, .menu-btn {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 520px) {
+  * {
+    font-size: 14px;
+  }
+
+  .menu-btn,
+  .menu-title {
+    display: block;
+    opacity: 1;
+  }
+
+  .menu-btn {
+    position: absolute;
+    top: 15px;
+    left: 32px;
+    font-size: 30px;
+    color: #D3D3D3;
+    text-shadow: 0px 0px 2px black;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: white;
+    z-index: 10;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 3px solid cyan;
+  }
+
+  .close-menu {
+    position: absolute;
+    font-size: 2rem;
+    right: 32px;
+    top: 18px;
+    color: #D3D3D3;
+    text-shadow: 0px 0px 1px black;
+  }
+
+  .close-menu.show {
+    opacity: 1;
+  }
+
+  nav.transform {
+    transform: translateX(0%);
+  }
+
+  nav {
+    position: fixed;
+    width: 80%;
+    transform: translateX(-100%);
+    height: 100vh;
+    border-right: 4px solid salmon;
+    background-color: #252525;
+    transition: transform .3s;
+  }
+
+  nav ul {
+    flex-direction: column;
+    border: none;
+
+  }
+
+  nav ul li {
+    border-bottom: 1px solid aqua;
+
+  }
+
+  nav ul li a, li label {
+    color: white;
+    border: none;
+    transition: .3s;
+  }
+
+  nav ul li a:hover, li label:hover {
+    color: cyan;
+  }
+
+  .menu-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: cyan;
+    border: none;
+    font-weight: bolder;
+    text-shadow: 1px -1px 1px white;
+  }
+
+  .area-content {
+    display: block;
+  }
+
+  .skill-box {
+    margin: 15px 0;
+  }
+
+  .project-box {
+    border-radius: 80px;
+    margin: 15px 0;
+  }
+
+  .project-box .pic-box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .project-box span {
+    width: 100px;
+    height: 100px;
+  }
+}
