@@ -311,11 +311,17 @@ section h2 {
 }
 
 .menu-title,
-#menu-btn,
-#close-menu,
 #contactBtn {
   display: none;
 }
+
+#menu-btn,
+#close-menu {
+  opacity: 0;
+  position: absolute;
+}
+
+
 
 .close-menu, .menu-btn {
   opacity: 0;
