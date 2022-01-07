@@ -390,6 +390,10 @@ section h2 {
     border-bottom: 1px solid aqua;
 
   }
+  
+  nav ul li:last-child {
+    border: none;
+  }
 
   nav ul li a, li label {
     color: white;
