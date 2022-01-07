@@ -18,5 +18,3 @@ closeMenu.addEventListener('click', function(){
 contactBtn.addEventListener('click', function(){
   contact.classList.toggle('show');
 });
-
-alert(window.innerWidth)
