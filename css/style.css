@@ -247,7 +247,7 @@ section h2 {
   box-shadow: 0px 0px 10px black;
   border-radius: 150px;
   position: relative;
-  cursor: pointer;
+  cursor: default;
 }
 
 .project-box .pic-box {
