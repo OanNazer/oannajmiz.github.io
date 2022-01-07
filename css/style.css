@@ -240,7 +240,6 @@ section h2 {
 
 
 
-
 .project-box {
   background-color: white;
   display: flex;
@@ -252,11 +251,9 @@ section h2 {
 }
 
 .project-box .pic-box {
-  width: 150px;
-  height: 150px;
+  border: 3px solid black;
   border-radius: 50%;
   margin: 15px;
-  border: 3px solid black;
   overflow: hidden;
 }
 
@@ -298,8 +295,6 @@ section h2 {
 .project-box:hover .pic-box img {
   transform: translateX(0%) rotate(0deg);
 }
-
-
 
 #contact {
   display: none;
