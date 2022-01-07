@@ -377,7 +377,7 @@ section h2 {
     transform: translateX(-100%);
     height: 100vh;
     border-right: 4px solid salmon;
-    background-color: salmon;
+    background-color: #252525;
     transition: transform .3s;
   }
 
