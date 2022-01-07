@@ -251,6 +251,8 @@ section h2 {
 }
 
 .project-box .pic-box {
+  width: 150px;
+  height: 150px;
   border: 3px solid black;
   border-radius: 50%;
   margin: 15px;
