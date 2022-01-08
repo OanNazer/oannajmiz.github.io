@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me!</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      max-width: 820px;
+      margin: auto;
+      font-size: 12px;
+    }
+
+    form {
+      margin: 30px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px black;
+      padding: 50px;
+      text-align: left;
+      font-weight: 800;
+    }
+
+    fieldset {
+      border: none;
+    }
+
+    label,
+    #submit {
+      font-size: 1em !important;
+      font-weight: 800;
+    }
+
+    #submit {
+      padding: 0.5em !important;
+    }
+
+    textarea {
+      resize: vertical;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 5px;
+      width: 100%;
+      padding: 1em 1.2em;
+      font-size: 14px;
+    }
+
+    form input {
+      padding: 1em 1.2em;
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    #submit {
+      float: right;
+      padding: 0.2em 0.7em;
+      border-radius: 5px;
+      font-size: 0.8em;
+      background-color: #1FD3F3;
+    }
+
+
+    @media screen and (max-width: 520px) {
+      body {
+        margin-top: 0;
+        font-size: 16px;
+      }
+      form {
+        padding: 30px;
+      }
+      label,
+      #submit {
+        font-size: 1em;
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <form action="https://formsubmit.co/oannajmiz@gmail.com" method="POST">
+    <h1>Hubungi gua!</h1>
+    <!-- Honey Pot -->
+    <input type="text" name="_honey" style="display: none">
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="http://oannazer.github.io/sent.html">
+    <fieldset>
+      <label for="name">Nama :</label>
+      <input type="text" name="Name" placeholder="Masukin nama lu.." required>
+      <label for="email">Email :</label>
+      <input type="email" name="Email" placeholder="Masukin alamat email lu.." required>
+      <label for="message">Pesan :</label>
+      <textarea rows="5" name="Ini&nbsp;pesannya" placeholder="Tulis pesan lu.." required></textarea>
+      <input type="submit" id="submit" value="Kirim">
+    </fieldset>
+  </form>
+</body>
+
+</html>
