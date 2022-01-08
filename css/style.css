@@ -41,6 +41,7 @@ img {
   cursor: default;
   width: 100%;
   padding: 15px 30px;
+  margin: 0;
   background-color: #D7D7D7;
 }
 
@@ -289,7 +290,7 @@ section h2 {
 }
 
 .caption a:hover {
-  border-bottom: 2px solid salmon;
+  color: #747474;
 }
 
 .project-box span {
@@ -306,7 +307,9 @@ section h2 {
 .project-box:hover>span {
   opacity: 0;
 }
-
+.project-box:hover > .caption a {
+  border-bottom: 2px solid salmon;
+}
 .project-box:hover .pic-box img {
   transform: translateX(0%) rotate(0deg);
 }
@@ -376,7 +379,7 @@ i.fa-envelope {
 }
 
 
-.menu-title {
+.menu-title, .tes {
   display: none;
 }
 
@@ -401,25 +404,30 @@ i.fa-envelope {
   }
 
   .menu-btn {
-    position: absolute;
-    top: 15px;
+    position: fixed;
+    top: 20px;
     left: 25px;
     font-size: 1.5em;
     color: #D3D3D3;
     text-shadow: 0px 0px 2px black;
+    z-index: 10;
   }
-
+  .tes {
+    display: block;
+  }
+  .tes:hover + nav {
+    transform: translateX(0%);
+  }
   .title {
     font-size: 1.5rem;
     position: sticky;
     top: 0;
     text-align: center;
     background-color: white;
-    z-index: 10;
+    z-index: 1;
     text-shadow: 1px 1px 1px black;
     border-bottom: 3px solid cyan;
   }
-  
   section h2 {
     font-size: 1.2em;
   }
@@ -436,10 +444,6 @@ i.fa-envelope {
   }
   .caption {
     font-size: 0.7em;
-  }
-  
-  nav.transform {
-    transform: translateX(0%);
   }
 
   nav {
@@ -467,7 +471,7 @@ i.fa-envelope {
     border: none;
   }
 
-  nav ul li a {
+  nav ul li a{
     color: white;
     border: none;
     transition: .3s;
