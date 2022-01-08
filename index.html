@@ -6,44 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | OanNZ</title>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" style="border-radius: 50%"/>
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="css/reset.css"> -->
-  
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
   <div class="container">
+    
     <input type="button" id="menu-btn">
     <div class="title">
       My Portfolio
       <label for="menu-btn">
-        <i class="fas fa-bars menu-btn">o</i>
+        <i class="fas fa-bars menu-btn"></i>
       </label>
-      <label for="close-menu">
-        <i class="fas fa-times close-menu">x</i>
-      </label>
+      <!--<label for="close-menu">
+        <i class="fas fa-times close-menu"></i>
+      </label>-->
     </div>
     <input type="button" id="close-menu">
     <nav>
-      <ul>
+      <ul class="nav-link">
         <li class="menu-title">My Portfolio</li>
         <li>
-          <a href="#about">About</a>
+          <a href="#home" class="link">Home</a>
         </li>
         <li>
-          <a href="#skill">Skills</a>
+          <a href="#about" class="link">About Me</a>
         </li>
         <li>
-          <a href="#project">Projects</a>
+          <a href="#skill" class="link">Skills</a>
         </li>
         <li>
-          <label for="contactBtn">Contact Me</label>
-          <input type="button" id="contactBtn" />
+          <a href="#project" class="link">Projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="link contactBtn">Contact Me</a>
+          <!--<label for="contactBtn">Contact Me</label>
+          <input type="button" id="contactBtn" />-->
         </li>
       </ul>
     </nav>
-    <section>
+    <section id="home" class="active">
       <div class="jumbotron">
         <h1>Oan Najmi Zertho</h1>
         <div class="thumbnail">
@@ -186,20 +191,22 @@
     <section id="contact">
       <div class="wrapper">
         <h2>Contact Me</h2>
-        <form action="massage.php" method="post">
+        <form action="https://formsubmit.co/oannajmiz@gmail.com" method="POST">
           <fieldset>
-            <label for="email">Email</label>
-            <input type="email" placeholder="Input your email address.." required value="">
-            <label for="message">Message</label>
-            <textarea name="message" placeholder="Write your message.."></textarea>
-            <button>Send</button>
+            <label for="name">Name :</label>
+            <input type="text" placeholder="Enter your name" required>
+            <label for="email">Email :</label>
+            <input type="email" placeholder="Input your email address.." required>
+            <label for="message">Message :</label>
+            <textarea name="message" placeholder="Write your message.." required></textarea>
+            <input type="submit" id="submit">
           </fieldset>
         </form>
-        <button class="close">x</button>
+        
       </div>
     </section>
   </div>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
 </body>
 
