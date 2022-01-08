@@ -467,10 +467,11 @@ i.fa-envelope {
     border: none;
   }
 
-  nav ul li a, li label {
+  nav ul li a {
     color: white;
     border: none;
     transition: .3s;
+    font-size: 1.2em;
   }
 
   nav ul li a:hover, nav ul li a.active {
