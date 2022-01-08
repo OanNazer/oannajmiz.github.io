@@ -79,7 +79,7 @@ nav ul li:nth-child(2) a {
   border: none;
 }
 
-nav ul li a:hover, nav ul li label:hover {
+nav ul li a:hover, nav ul li a.active {
   color: salmon;
   font-weight: bolder;
 }
@@ -408,7 +408,7 @@ section h2 {
     transition: .3s;
   }
 
-  nav ul li a:hover, nav ul li label:hover {
+  nav ul li a:hover, nav ul li a.active {
     color: cyan;
   }
 
