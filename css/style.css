@@ -285,7 +285,7 @@ section h2 {
 }
 
 .project-box .caption a {
-  font-size: 1.2em;
+  font-size: 2em;
   transition: 0.3s;
 }
 
@@ -509,7 +509,9 @@ i.fa-envelope {
     width: 100px;
     height: 100px;
   }
-
+  .project-box .caption a {
+    font-size: 1.2em;
+  }
   .project-box span {
     width: 100px;
     height: 100px;
