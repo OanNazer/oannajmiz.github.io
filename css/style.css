@@ -12,7 +12,7 @@ body {
   background-color: #eaeaea;
   cursor: default;
   margin: 0;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 img {
@@ -73,7 +73,7 @@ nav ul li a, li label {
   padding: 0 15px;
   border-left: 1px solid black;
   transition: 0.3s;
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 
 nav ul li:nth-child(2) a {
@@ -168,7 +168,7 @@ section h2 {
 
 .skill-box .title-box {
   background-color: lightblue;
-  font-size: 0.68em;
+  font-size: 1em;
   font-weight: bold;
   padding: 10px;
   border-radius: 5px 5px 0px 0px;
@@ -285,7 +285,7 @@ section h2 {
 }
 
 .project-box .caption a {
-  font-size: 2em;
+  font-size: 1.5em;
   transition: 0.3s;
 }
 
@@ -516,7 +516,10 @@ i.fa-envelope {
     width: 100px;
     height: 100px;
   }
-  #contact .contact-links {
+  #contact {
+    padding: 10px;
+  }
+  #contact .contact-links, .links {
     display: block;
   }
 }
