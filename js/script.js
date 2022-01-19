@@ -12,7 +12,7 @@ $('.link').on('click', function(e) {
     })
 
     const link = this.hash;
-    console.log(link)
+    
     $('html, body').animate({
       scrollTop: $(link).offset().top - 50
     }, 1000, 'easeInOutExpo');
