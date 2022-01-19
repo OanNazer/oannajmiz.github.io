@@ -1,5 +1,3 @@
-"use strict";
-
 var links = document.querySelectorAll('.link');
 
 $('.link').on('click', function(e) {
@@ -12,7 +10,7 @@ $('.link').on('click', function(e) {
     })
 
     const link = this.hash;
-    
+    // console.log(link)
     $('html, body').animate({
       scrollTop: $(link).offset().top - 50
     }, 1000, 'easeInOutExpo');
@@ -32,7 +30,7 @@ if (window.innerWidth <= 5600) {
             $('.skill-box').eq(i).addClass('muncul');
 
             $('.skill-box .progress-box').each(function(j) {
-              console.log($('.progress-box'));
+              // console.log($('.progress-box'));
 
               /*
               setTimeout(()=>{
