@@ -1,3 +1,5 @@
+"use strict";
+
 var links = document.querySelectorAll('.link');
 
 $('.link').on('click', function(e) {
