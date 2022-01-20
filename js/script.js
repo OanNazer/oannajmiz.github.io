@@ -26,7 +26,7 @@ if (window.innerWidth <= 5600) {
     if (scroll > $('#skill').offset().top - 300) {
       $('#skill .skill-box').each(function(i) {
         setTimeout(() => {
-          if (scroll > $('.skill-box').eq(i).offset().top - 300) {
+          if (scroll > $('.skill-box').eq(i).offset().top - 500) {
             $('.skill-box').eq(i).addClass('muncul');
             if ($('.skill-box').class == "muncul") console.log("tes");
             $('.skill-box .progress-box').each(function(j) {
