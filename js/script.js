@@ -61,5 +61,3 @@ $all('.skill-box').forEach(() => {
   });
 });
 */
-
-const profile = document.querySelector('.profile').getAttribute('alt');
