@@ -23,7 +23,7 @@ if (window.innerWidth <= 5600) {
     var scroll = $(this).scrollTop();
 
     // skill box
-    if (scroll > $('#skill').offset().top - 200) {
+    if (scroll > $('#skill').offset().top - 300) {
       $('#skill .skill-box').each(function(i) {
         setTimeout(() => {
           if (scroll > $('.skill-box').eq(i).offset().top - 500) {
