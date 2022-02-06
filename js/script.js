@@ -42,7 +42,7 @@ if (window.innerWidth <= 5600) {
 
             });
           } else {
-            $('.skill-box').removeClass('muncul');
+            //$('.skill-box').removeClass('muncul');
           }
         },
           500 * (i + 1));
